@@ -13,7 +13,9 @@ public class FindSecondHighest {
         Integer[] arr ={12,16,45,11,18,22,19,20,45};
 
         Integer integer = Arrays.stream(arr).distinct().sorted((num1,num2)->num2-num1).skip(1).findFirst().orElse(0);
+//        Arrays.stream(arr).sorted(Comparator.comparing()) //comparing always takes key extractor
         System.out.println(integer);
+        System.out.println("-----");
 
         Arrays.stream(arr).sorted(Comparator.reverseOrder()).forEach(e-> System.out.println(e));
 

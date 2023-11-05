@@ -1,0 +1,10 @@
+you hava
+class Player{
+  name
+  score
+  type
+}
+class player{
+list<Player>
+}
+ find out the total score by team
